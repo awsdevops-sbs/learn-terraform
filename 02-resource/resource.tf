@@ -9,7 +9,7 @@ terraform {
 resource "aws_spot_instance_request" "Frontend_terrform" {
   ami                  = "ami-09c813fb71547fc4f"
   instance_type        = "t3.micro"
-  spot_price           = "0.02"
+  spot_price           = "0.015"
   spot_type = "persistent"  # This replaces the 'persistent' argument
   instance_interruption_behavior = "stop"  # Stops instead of terminating
 
