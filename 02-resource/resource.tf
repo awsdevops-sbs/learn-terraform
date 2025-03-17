@@ -6,7 +6,7 @@ terraform {
     }
   }
 }
-resource "aws_instance" "Frontend_terrform" {
+resource "aws_spot_instance_request" "Frontend_terrform" {
 
   ami           = "ami-09c813fb71547fc4f"
   instance_type = "t3.micro"
@@ -15,5 +15,4 @@ resource "aws_instance" "Frontend_terrform" {
   persistent = true
   vpc_security_group_ids = ["sg-0262c4232ab2a8184"]
 
-
-  }
+ }
