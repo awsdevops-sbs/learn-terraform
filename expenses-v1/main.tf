@@ -24,7 +24,7 @@ variable "instance_types" {
 
   default = {
 
-    tforntend = {
+    tfrontend = {
 
       instance_type = "t3.micro"
     }
