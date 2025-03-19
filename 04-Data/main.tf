@@ -28,7 +28,7 @@ data "aws_instance" "test" {
 }
 
 output "check" {
-  value = [ data.aws_instance.test.key_name ,
+  value = [ data.aws_instance.test.tags["Name"] ,
             data.aws_instance.test.private_ip,
             data.aws_instance.test.private_dns
           ]
