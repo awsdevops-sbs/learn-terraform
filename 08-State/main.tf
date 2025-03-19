@@ -1,5 +1,5 @@
 terraform {
-  backend "S3" {
+  backend "s3" {
 
     bucket = "mybucket16297"
     key    = "test/mybucket"
@@ -16,4 +16,4 @@ terraform {
 
 resource "null_resource" "dummy1" {}
 
-resource "null_resource" "dummy1" {}
+resource "null_resource" "dummy2" {}
