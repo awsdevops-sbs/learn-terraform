@@ -8,7 +8,7 @@ terraform {
 }
 data "aws_security_groups" "selected" {
 
-  Name = "allow-all"
+  name = "allow-all"
 
 }
 
