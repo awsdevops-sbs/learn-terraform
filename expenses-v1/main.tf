@@ -26,7 +26,7 @@ variable "instance_types" {
 
     tfrontend = {
 
-      instance_type = "t3.micro"
+      instance_type = "t3.large"
     }
 
     tbackend = {
