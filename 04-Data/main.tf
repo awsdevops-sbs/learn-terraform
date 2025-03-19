@@ -19,11 +19,16 @@ output "sec" {
 
 data "aws_instance" "test" {
 
-  name = "frontend"
+  filter {
+    name   = "tag:Name"   # Filter based on the Name tag
+    values = ["frontend"]
+  }
+
+
 }
 
 output "check" {
-  value = [ data.aws_instance.test.name ,
+  value = [ data.aws_instance.test.key_name ,
             data.aws_instance.test.private_ip,
             data.aws_instance.test.private_dns
           ]
