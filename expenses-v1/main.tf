@@ -31,7 +31,7 @@ variable "instance_types" {
 
     tbackend = {
 
-      instance_type = "t3.micro"
+      instance_type = "t3.large"
     }
 
     tmysql = {
